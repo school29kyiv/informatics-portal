@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Informatics Portal</title>
+  <style>
+    html, body, iframe {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe 
+    id="portalFrame"
+    src=""
+    frameborder="0"
+    width="100%" 
+    height="100%">
+  </iframe>
+
+  <script>
+    (function() {
+      var baseUrl = "https://script.google.com/macros/s/AKfycbypqpJK-wkLDpbaf6vvaJaAFNnvwa5o7kskFfNOKF5DFt29VKB4HwLU_MMI_y37Q9Rg/exec";
+      var params = window.location.search || "";
+      document.getElementById("portalFrame").src = baseUrl + params;
+    })();
+  </script>
+</body>
+</html>
